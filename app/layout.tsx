@@ -2,8 +2,87 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import localFont from "next/font/local";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const spaceGrotesk = localFont({
+  src: [
+    {
+      path: "../public/fonts/space-grotesk/SpaceGrotesk-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/space-grotesk/SpaceGrotesk-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/space-grotesk/SpaceGrotesk-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/space-grotesk/SpaceGrotesk-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/space-grotesk/SpaceGrotesk-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  variable: "--font-heading",
+});
+
+const newsreader = localFont({
+  src: [
+    {
+      path: "../public/fonts/newsreader/NewsreaderText-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/newsreader/NewsreaderText-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/newsreader/NewsreaderText-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/newsreader/NewsreaderText-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/newsreader/NewsreaderText-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  variable: "--font-serif",
+});
+
+const liberationMono = localFont({
+  src: [
+    {
+      path: "../public/fonts/liberation-mono/LiberationMono-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/liberation-mono/LiberationMono-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-mono",
+});
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,8 +105,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn(geistSans.variable, geistMono.variable, "font-sans", inter.variable)}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={cn(
+        geistSans.variable,
+        geistMono.variable,
+        "font-sans",
+        inter.variable,
+        spaceGrotesk.variable,
+        newsreader.variable,
+        liberationMono.variable,
+      )}
+    >
+      <body className="bg-background">{children}</body>
     </html>
   );
 }
