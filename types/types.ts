@@ -79,7 +79,6 @@ export type CardBlockType = {
   config: CardBlockConfig;
 };
 
-
 // Fig block here
 export type FigBlockType = {
   id: string;
@@ -144,12 +143,21 @@ export type LogType = {
     src: string;
     alt: string;
   };
+  author?: {
+    name: string;
+    image: string;
+    bio: string;
+  };
   tag: TagType;
   keywords: string[];
-  createdAt: string;
+  createdAt?: string;
   blocks: BlockType[];
   cardConfig: {
     variant: LogCardVariant;
+  };
+  meta?: {
+    readingTime: number;
+    createdAt: string;
   };
 };
 
@@ -170,12 +178,15 @@ export type LongFormType = {
     image: string;
     bio: string;
   };
+  createdAt?: string;
   meta: {
     readingTime: number;
     createdAt: string;
   };
   blocks: BlockType[];
-cardConfig?: {
-    variant: 'simple' | 'modern';
+  cardConfig?: {
+    variant: "simple" | "modern";
   };
 };
+
+export type entries = LogType | LongFormType;

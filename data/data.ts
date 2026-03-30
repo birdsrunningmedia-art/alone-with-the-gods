@@ -11,7 +11,7 @@ export const logs: LogType[] = [
     title: "Latency as Language",
     theme: "primary",
     cardImage: {
-      src: "/images/logs/latency.jpg",
+      src: "/images/logs/latency.webp",
       alt: "Blurred cursor trail",
     },
     tag: "log",
@@ -26,6 +26,7 @@ export const logs: LogType[] = [
         content: {
           text: "There is always a delay between intention and response. It may be imperceptible, measured in milliseconds, but it exists. In most systems, this delay is treated as an error condition—something to be minimized, hidden, or eliminated entirely.\n\nBut when the delay becomes visible, something shifts. The illusion of immediacy collapses, and the system begins to feel real. You notice the processing, the transitions, the subtle negotiation between input and output. The interface is no longer transparent—it becomes an object with behavior.\n\nThis exposure is often uncomfortable. We are conditioned to expect seamlessness, to equate speed with quality. But latency is not simply a failure of performance. It is a form of disclosure. It reveals that every action is mediated, that nothing occurs instantly, that all interaction is translated through layers of abstraction.\n\nWhen latency disappears, so does awareness. We begin to believe in directness, in control without friction. But the system has not changed—only our perception of it has. The delay, when it appears, interrupts that perception. It forces us to confront the machinery beneath the surface.\n\nAnd perhaps that is its value. Not as a flaw to be corrected, but as a signal. A reminder that what we interact with is not immediate, not natural, but constructed. Designed. Engineered.",
         },
+        config: {variant: 'normal'}
       },
       {
         id: "b2",
@@ -33,7 +34,7 @@ export const logs: LogType[] = [
         content: {
           images: [
             {
-              src: "/images/logs/latency-2.jpg",
+              src: "/images/logs/latency-2.webp",
               alt: "UI lag motion blur",
             },
           ],
@@ -57,7 +58,7 @@ export const logs: LogType[] = [
     title: "Archive Without Memory",
     theme: "muted",
     cardImage: {
-      src: "/images/logs/archive.jpg",
+      src: "/images/logs/archive.webp",
       alt: "Digital storage systems",
     },
     tag: "log",
@@ -89,7 +90,7 @@ export const logs: LogType[] = [
     title: "Interface Fatigue",
     theme: "accent",
     cardImage: {
-      src: "/images/logs/interface.jpg",
+      src: "/images/logs/interface.webp",
       alt: "Overloaded UI",
     },
     tag: "log",
@@ -122,7 +123,7 @@ export const logs: LogType[] = [
     title: "Silent Updates",
     theme: "secondary",
     cardImage: {
-      src: "/images/logs/update.jpg",
+      src: "/images/logs/update.webp",
       alt: "System update bar",
     },
     tag: "log",
@@ -156,13 +157,13 @@ export const essays: LongFormType[] = [
     subtitle:
       "The most effective structures are the ones that do not announce themselves.",
     cardImage: {
-      src: "/images/essays/grid.jpg",
+      src: "/images/essays/grid.webp",
       alt: "Grid overlay",
     },
     keywords: ["design", "systems"],
     author: {
       name: "Julian Thorne",
-      image: "/images/authors/julian.jpg",
+      image: "/images/authors/julian.webp",
       bio: "Design critic exploring structured systems.",
     },
     meta: { readingTime: 14, createdAt: "2026-03-10" },
@@ -186,7 +187,7 @@ export const essays: LongFormType[] = [
         content: {
           images: [
             {
-              src: "/images/essays/grid-detail.jpg",
+              src: "/images/essays/grid-detail.webp",
               alt: "Grid detail",
             },
           ],
@@ -207,7 +208,7 @@ export const essays: LongFormType[] = [
     subtitle:
       "Why resistance, when applied deliberately, creates deeper engagement.",
     cardImage: {
-      src: "/images/essays/friction.jpg",
+      src: "/images/essays/friction.webp",
       alt: "Slow UI interaction",
     },
     keywords: ["ux"],
@@ -243,7 +244,7 @@ export const essays: LongFormType[] = [
     subtitle:
       "Modern interfaces are no longer surfaces—they are stacks of interacting systems.",
     cardImage: {
-      src: "/images/essays/layers.jpg",
+      src: "/images/essays/layers.webp",
       alt: "Layered UI",
     },
     keywords: ["ui"],
@@ -277,7 +278,7 @@ export const essays: LongFormType[] = [
     subtitle:
       "Imperfection reintroduces presence into otherwise sterile systems.",
     cardImage: {
-      src: "/images/essays/noise.jpg",
+      src: "/images/essays/noise.webp",
       alt: "Noise texture",
     },
     keywords: ["imperfection"],
@@ -308,7 +309,7 @@ export const theories: LongFormType[] = [
     tag: "theory",
     subtitle: "All structured systems degrade over time, regardless of intent.",
     cardImage: {
-      src: "/images/theory/entropy.jpg",
+      src: "/images/theory/entropy.webp",
       alt: "Entropy diagram",
     },
     keywords: ["entropy"],
@@ -320,7 +321,7 @@ export const theories: LongFormType[] = [
         type: "fig",
         content: {
           image: {
-            src: "/images/theory/entropy.jpg",
+            src: "/images/theory/entropy.webp",
             alt: "Entropy stages",
           },
           title: "FIG_A — Entropy Progression",
@@ -365,6 +366,9 @@ export const theories: LongFormType[] = [
         },
       },
     ],
+    cardConfig: {
+      variant: 'simple'
+    }
   },
 
   {
@@ -375,7 +379,7 @@ export const theories: LongFormType[] = [
     tag: "theory",
     subtitle: "Systems rarely fail once—they fail repeatedly until collapse.",
     cardImage: {
-      src: "/images/theory/failure.jpg",
+      src: "/images/theory/failure.webp",
       alt: "Loop diagram",
     },
     keywords: ["failure"],
@@ -423,7 +427,7 @@ export const theories: LongFormType[] = [
     tag: "theory",
     subtitle: "Absence is not empty—it is a structural condition.",
     cardImage: {
-      src: "/images/theory/void.jpg",
+      src: "/images/theory/void.webp",
       alt: "Void composition",
     },
     keywords: ["void"],
@@ -448,7 +452,7 @@ export const theories: LongFormType[] = [
     tag: "theory",
     subtitle: "Disruption is not chaos—it is a structural reset.",
     cardImage: {
-      src: "/images/theory/disruption.jpg",
+      src: "/images/theory/disruption.webp",
       alt: "Disruption model",
     },
     keywords: ["disruption"],
@@ -460,7 +464,7 @@ export const theories: LongFormType[] = [
         type: "fig",
         content: {
           image: {
-            src: "/images/theory/disruption.jpg",
+            src: "/images/theory/disruption.webp",
             alt: "Disruption cycles",
           },
           title: "FIG_B — Disruption Cycle",
