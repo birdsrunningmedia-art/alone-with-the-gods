@@ -5,7 +5,7 @@ import TextRenderer from "../TextRenderer";
 export default function TextBlock({ content, config }: TextBlockType) {
   return (
     
-      <TextRenderer type={config?.variant} segments={parseText(content.text)} className={`mx-auto ${config?.variant === "normal" ? "text-xl" : config?.variant === "subheading" ? "text-3xl font-bold" : "text-5xl font-bold"}`}/>
+      <TextRenderer type={config?.variant} segments={parseText(content.text)} className={`mx-auto ${config?.variant === "normal" ? "text-xl" : config?.variant === "subheading" ? "text-3xl font-bold" : ""} font-mono mb-3 px-3`}/>
    
   );
 }

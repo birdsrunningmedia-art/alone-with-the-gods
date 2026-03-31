@@ -1,6 +1,5 @@
 // vault landing
 import React from "react";
-import { feedsForVault } from "@/utils/helpers/getFeeds";
 import { feeds } from "@/utils/helpers/loadFeeds";
 import CardRenderer from "@/components/CardRenderer";
 

@@ -26,7 +26,7 @@ export const logs: LogType[] = [
         content: {
           text: "There is always a delay between intention and response. It may be imperceptible, measured in milliseconds, but it exists. In most systems, this delay is treated as an error condition—something to be minimized, hidden, or eliminated entirely.\n\nBut when the delay becomes visible, something shifts. The illusion of immediacy collapses, and the system begins to feel real. You notice the processing, the transitions, the subtle negotiation between input and output. The interface is no longer transparent—it becomes an object with behavior.\n\nThis exposure is often uncomfortable. We are conditioned to expect seamlessness, to equate speed with quality. But latency is not simply a failure of performance. It is a form of disclosure. It reveals that every action is mediated, that nothing occurs instantly, that all interaction is translated through layers of abstraction.\n\nWhen latency disappears, so does awareness. We begin to believe in directness, in control without friction. But the system has not changed—only our perception of it has. The delay, when it appears, interrupts that perception. It forces us to confront the machinery beneath the surface.\n\nAnd perhaps that is its value. Not as a flaw to be corrected, but as a signal. A reminder that what we interact with is not immediate, not natural, but constructed. Designed. Engineered.",
         },
-        config: {variant: 'normal'}
+        config: { variant: "normal" },
       },
       {
         id: "b2",
@@ -307,7 +307,8 @@ export const theories: LongFormType[] = [
     title: "Entropy Model",
     theme: "primary",
     tag: "theory",
-    subtitle: "All structured systems degrade over time, regardless of intent.",
+    subtitle:
+      "An examination of the friction between high-fashion editorial systems and the raw velocity of urban graffiti.",
     cardImage: {
       src: "/images/theory/entropy.webp",
       alt: "Entropy diagram",
@@ -324,9 +325,60 @@ export const theories: LongFormType[] = [
             src: "/images/theory/entropy.webp",
             alt: "Entropy stages",
           },
-          title: "FIG_A — Entropy Progression",
+          title: "FIG_A — Entropy",
           caption: "Ordered systems degrade into disorder.",
         },
+        config: { variant: "simple" },
+      },
+      {
+        id: "b4",
+        type: "text",
+        content: {
+          text: "01. The Void of Luxury",
+        },
+        config: { variant: "subheading" },
+      },
+
+      {
+        id: "b5",
+        type: "text",
+        content: {
+          text: "Luxury has long been defined by its exclusivity—a polished, untouchable surface designed to exclude the mundane. However, the rise of the Vandal Aesthetic marks a turning point where the sacred geometry of couture is intentionally fractured.",
+        },
+        
+      },
+      {
+        id: "b6",
+        type: "text",
+        content: {
+          text: 'This "theology of the break" suggests that beauty is no longer found in perfection, but in the specific way an object fails to meet expectation. When a $5,000 blazer is treated with the same disregard as a subway wall, the hierarchy of value collapses.',
+        },
+       
+      },
+
+      {
+        id: "b7",
+        type: "quoteCard",
+        content: {
+          quote:
+            " The act of creation is always preceded by an act of destruction. To build the new editorial, we must first burn the old manuscript.",
+        },
+      },
+      {
+        id: "b8",
+        type: "text",
+        content: {
+          text: 'This "theology of the break" suggests that beauty is no longer found in perfection, but in the specific way an object fails to meet expectation. When a $5,000 blazer is treated with the same disregard as a subway wall, the hierarchy of value collapses.',
+        },
+       
+      },
+      {
+        id: "b9",
+        type: "text",
+        content: {
+          text: 'This "theology of the break" suggests that beauty is no longer found in perfection, but in the specific way an object fails to meet expectation. When a $5,000 blazer is treated with the same disregard as a subway wall, the hierarchy of value collapses.',
+        },
+       
       },
       {
         id: "b2",
@@ -339,25 +391,22 @@ export const theories: LongFormType[] = [
         id: "b3",
         type: "table",
         content: {
-          headers: ["Stage", "State", "Description"],
+          headers: ["State", "Description"],
           rows: [
             {
               cells: [
-                { content: "1" },
                 { content: "Stable" },
                 { content: "System holds structure" },
               ],
             },
             {
               cells: [
-                { content: "2" },
                 { content: "Degrading" },
                 { content: "Inconsistencies accumulate" },
               ],
             },
             {
               cells: [
-                { content: "3" },
                 { content: "Collapsed" },
                 { content: "Structure dissolves" },
               ],
@@ -365,10 +414,22 @@ export const theories: LongFormType[] = [
           ],
         },
       },
+      {
+        id: "b10",
+        type: "fig",
+        content: {
+          image: {
+            src: "/images/theory/entropy.webp",
+            alt: "Entropy stages",
+          },
+          title: "FIG_A — Entropy",
+          caption: "Ordered systems degrade into disorder.",
+        },
+      },
     ],
     cardConfig: {
-      variant: 'simple'
-    }
+      variant: "simple",
+    },
   },
 
   {

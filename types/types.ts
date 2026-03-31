@@ -97,7 +97,7 @@ export type FigBlockType = {
 
 export type QuoteBlockType = {
   id: string;
-  type: "quote";
+  type: "quote" | 'quoteCard';
   content: { quote: string; author?: string };
   config?: { variant?: "log" | "essay" | "theory" };
 };
