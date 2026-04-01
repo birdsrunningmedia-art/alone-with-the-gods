@@ -6,6 +6,7 @@ import AuthorBlock from "./Blocks/AuthorBlock";
 import { FigBlock } from "./Blocks/FigBlock";
 import RefBlock from "./Blocks/RefBlock";
 import TableBlock from "./Blocks/TableBlock";
+import CardBlock from "./Blocks/CardBlock";
 
 export function BlockRenderer({ blocks }: { blocks: BlockType[] }) {
   return blocks.map((block) => {
@@ -26,6 +27,8 @@ export function BlockRenderer({ blocks }: { blocks: BlockType[] }) {
         return <RefBlock key={block.id} {...block} />;
       case "table":
         return <TableBlock key={block.id} {...block} />;
+      case "card":
+        return <CardBlock key={block.id} {...block} />;
       default:
         return null;
     }

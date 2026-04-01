@@ -21,8 +21,8 @@ export default function TheoryBlockRenderer({
           <div
             className={
               group.length === 1
-                ? "w-full"
-                : "columns-1 md:columns-2 gap-4"
+                ? "w-full my-6"
+                : "columns-1 lg:columns-2 gap-4 mb-6"
             }
             key={i}
           >

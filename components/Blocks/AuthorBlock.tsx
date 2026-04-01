@@ -3,42 +3,24 @@ import { AuthorBlockType } from "@/types/types";
 import Image from "next/image";
 
 export default function AuthorBlock({ content, config }: AuthorBlockType) {
-  if (config?.variant === "essay") {
+  if (config?.variant === "theory") {
     return (
-      <div>
-        <div>
-          <p>W</p>
+      <div className="border-t-2 border-b-2 border-black text-2xl py-6 font-mono flex items-center gap-6">
+        <div className="bg-primary p-3 w-fit">
+          <p className="text-accent">VV</p>
         </div>
-        <div>
-          <p>AUTHOR</p>
-          <p>{content.name}</p>
+        <div className="flex flex-col p-0 m-0 ">
+          <p className="text-[10px]">AUTHOR</p>
+          <p className="font-bold text-sm">{content.name}</p>
         </div>
-
-        <div>
-          <p>DATE</p>
-          <p>{content.bio}</p>
+        |
+        <div className=" h-fit">
+          <p className="uppercase text-[10px]">bio</p>
+          <p className="text-sm font-bold">{content.bio}</p>
         </div>
       </div>
     );
   } else {
-    return (
-      <div>
-        <div>
-          <div>
-            <Image src={content.image.src} alt={content.image.alt} />
-          </div>
-        </div>
-        <div>
-          <div>
-            <h3>{content.name}</h3>
-            <p>{content.name}</p>
-          </div>
-          <div className="flex">
-            <button>FOLLOW THE LOG</button>
-            <button>ARCHIVE ACCESS</button>
-          </div>
-        </div>
-      </div>
-    );
+    return null;
   }
 }

@@ -22,14 +22,6 @@ export const logs: LogType[] = [
     blocks: [
       {
         id: "b1",
-        type: "text",
-        content: {
-          text: "There is always a delay between intention and response. It may be imperceptible, measured in milliseconds, but it exists. In most systems, this delay is treated as an error condition—something to be minimized, hidden, or eliminated entirely.\n\nBut when the delay becomes visible, something shifts. The illusion of immediacy collapses, and the system begins to feel real. You notice the processing, the transitions, the subtle negotiation between input and output. The interface is no longer transparent—it becomes an object with behavior.\n\nThis exposure is often uncomfortable. We are conditioned to expect seamlessness, to equate speed with quality. But latency is not simply a failure of performance. It is a form of disclosure. It reveals that every action is mediated, that nothing occurs instantly, that all interaction is translated through layers of abstraction.\n\nWhen latency disappears, so does awareness. We begin to believe in directness, in control without friction. But the system has not changed—only our perception of it has. The delay, when it appears, interrupts that perception. It forces us to confront the machinery beneath the surface.\n\nAnd perhaps that is its value. Not as a flaw to be corrected, but as a signal. A reminder that what we interact with is not immediate, not natural, but constructed. Designed. Engineered.",
-        },
-        config: { variant: "normal" },
-      },
-      {
-        id: "b2",
         type: "image",
         content: {
           images: [
@@ -42,11 +34,55 @@ export const logs: LogType[] = [
         config: { variant: "cover" },
       },
       {
+        id: "b2",
+        type: "text",
+        content: {
+          text: `The "field note" isn't about accuracy; it's about the immediacy of the observation. In the neon-lit corridors of the underground district, the texture of the air feels like velvet and sandpaper. We captured the light as it fractured against the glass.`,
+        },
+        config: { variant: "normal" },
+      },
+
+      {
         id: "b3",
         type: "quote",
         content: {
-          quote: "Delay is the only honest part of a fast system.",
+          quote: "Luxury is the absence of noise.",
         },
+        config: {
+          variant: "log",
+        },
+      },
+      {
+        id: "b4",
+        type: "text",
+        content: {
+          text: `We found the archive tucked between a server farm and a tailor shop. The juxtaposition was too perfect. High-fashion meets low-fidelity. We processed the images on-site, the heat from the machines warming the room.`,
+        },
+        config: { variant: "normal" },
+      },
+      {
+        id: "b5",
+        type: "image",
+        content: {
+          images: [
+            {
+              src: "/images/logs/log-uno.webp",
+              alt: "silence",
+            },
+            {
+              src: "/images/logs/log-deus.webp",
+              alt: "silence",
+            },
+          ],
+        },
+      },
+      {
+        id: "b6",
+        type: "text",
+        content: {
+          text: `The final logs show a steady decline in signal quality. We are entering the quiet zone. The monospaced future is here, typed on keys that clack like heavy machinery. End of transmission.`,
+        },
+        config: { variant: "normal" },
       },
     ],
     cardConfig: { variant: "flex" },
@@ -151,11 +187,11 @@ export const essays: LongFormType[] = [
   {
     id: "essay-1",
     slug: "invisible-systems",
-    title: "Invisible Systems",
+    title: "THE SILENCE OF THE [GRID].",
     theme: "primary",
     tag: "essay",
     subtitle:
-      "The most effective structures are the ones that do not announce themselves.",
+      "A critical examination of the digital boundary, the violent precision of the layout, and the liberation found in aesthetic friction.",
     cardImage: {
       src: "/images/essays/grid.webp",
       alt: "Grid overlay",
@@ -169,19 +205,6 @@ export const essays: LongFormType[] = [
     meta: { readingTime: 14, createdAt: "2026-03-10" },
     blocks: [
       {
-        id: "b1",
-        type: "text",
-        content: { text: "Structure as Absence" },
-        config: { variant: "heading" },
-      },
-      {
-        id: "b2",
-        type: "text",
-        content: {
-          text: "A system is most effective when it disappears. This does not mean that it is absent, but that it operates without drawing attention to itself. In design, this quality is often misunderstood. Many assume that clarity requires visibility—that in order for a system to be understood, it must be seen.\n\nBut visible systems compete with the content they are meant to support. They introduce their own logic, their own rhythm, their own presence. This creates friction—not the productive kind, but the kind that distracts.\n\nInvisible systems operate differently. They guide perception without becoming the focus of attention. Alignment, spacing, proportion—these elements shape experience quietly.\n\nThe grid is not seen. It is felt.",
-        },
-      },
-      {
         id: "b3",
         type: "image",
         content: {
@@ -192,6 +215,74 @@ export const essays: LongFormType[] = [
             },
           ],
         },
+        config: { variant: "cover" },
+      },
+      {
+        id: "b2",
+        type: "text",
+        content: {
+          text: "A system is most effective when it disappears. This does not mean that it is absent, but that it operates without drawing attention to itself. In design, this quality is often misunderstood. Many assume that clarity requires visibility—that in order for a system to be understood, it must be seen.\n\nBut visible systems compete with the content they are meant to support. They introduce their own logic, their own rhythm, their own presence. This creates friction—not the productive kind, but the kind that distracts.\n\nInvisible systems operate differently. They guide perception without becoming the focus of attention. Alignment, spacing, proportion—these elements shape experience quietly.\n\nThe grid is not seen. It is felt.",
+        },
+        config: { variant: "normal" },
+      },
+      {
+        id: "b9",
+        type: "text",
+        content: {
+          text: "The Vandal aesthetic is not merely a rejection of order; it is a hyper-fixation on the mechanics of that order. It is the architectural equivalent of leaving the scaffolding exposed on a luxury skyscraper. By highlighting the structure—the strokes, the offsets, the raw hex codes—we force a confrontation between the observer and the observed.",
+        },
+        config: { variant: "normal" },
+      },
+
+      {
+        id: "b4",
+        type: "quote",
+        content: {
+          quote:
+            "True disruption does not come form intentional friction of a system that refuses to disappear.",
+          author: "THE MANIFESTO OF VOGUE, 1994",
+        },
+        config: { variant: "essay" },
+      },
+      {
+        id: "b5",
+        type: "text",
+        content: {
+          text: "The Friction of Form",
+        },
+        config: { variant: "subheading" },
+      },
+      {
+        id: "b6",
+        type: "text",
+        content: {
+          text: "We have been conditioned to prefer the curve. The rounded corner, the soft shadow, the gentle transition. These are the aesthetics of sedation. Brutalism, however, demands an active participant. The 0px radius is an architectural refusal of the organic. It suggests that the digital space is a constructed reality, a machine of logic and light that owes nothing to the softness of the human form.",
+        },
+        config: { variant: "normal" },
+      },
+      {
+        id: "b7",
+        type: "card",
+        content: {
+          cards: [
+            {
+              title: "STRUCTURAL INTEGRITY",
+              body: "The stroke is the boundary of thought. Without the 4px black rule, the content has no container, and without a container, the message is diluted by the infinite scroll.",
+            },
+            {
+              title: "VIOLENT CONTRAST",
+              body: "Electric Lime (#CCFF00) is not a color of nature. It is the color of the warning sign, the hazard tape, the glitch in the simulation.",
+            },
+          ],
+        },
+      },
+      {
+        id: "b8",
+        type: "text",
+        content: {
+          text: `In the end, we seek a "Vogue" that is earned. Not a beauty inherited from classical proportions, but a beauty forged in the tension between the vandal's spray can and the curator's white glove. The essay you are reading is a testament to that tension. It is a series of blocks, stacked with aggressive precision, inviting you to trip over the margins.`,
+        },
+        config: { variant: "normal" },
       },
     ],
     cardConfig: {
@@ -304,7 +395,7 @@ export const theories: LongFormType[] = [
   {
     id: "theory-1",
     slug: "entropy-model",
-    title: "Entropy Model",
+    title: "The Aesthetics of [Disruption]",
     theme: "primary",
     tag: "theory",
     subtitle:
@@ -313,10 +404,23 @@ export const theories: LongFormType[] = [
       src: "/images/theory/entropy.webp",
       alt: "Entropy diagram",
     },
-    keywords: ["entropy"],
+    keywords: ["entropy", "disruption", "friction", "high-fashion"],
     author: { name: "System Archive", image: "", bio: "" },
     meta: { readingTime: 14, createdAt: "2026-03-01" },
     blocks: [
+      {
+        id: "b0",
+        type: "author",
+        content: {
+          name: "CASSIAN VANE",
+          image: {
+            src: "/images/authors/julian.webp",
+            alt: "cassian vane",
+          },
+          bio: "Exemplenary. or simply stunning.",
+        },
+        config: { variant: "theory" },
+      },
       {
         id: "b1",
         type: "fig",
@@ -345,7 +449,7 @@ export const theories: LongFormType[] = [
         content: {
           text: "Luxury has long been defined by its exclusivity—a polished, untouchable surface designed to exclude the mundane. However, the rise of the Vandal Aesthetic marks a turning point where the sacred geometry of couture is intentionally fractured.",
         },
-        
+        config: { variant: "normal" },
       },
       {
         id: "b6",
@@ -353,7 +457,7 @@ export const theories: LongFormType[] = [
         content: {
           text: 'This "theology of the break" suggests that beauty is no longer found in perfection, but in the specific way an object fails to meet expectation. When a $5,000 blazer is treated with the same disregard as a subway wall, the hierarchy of value collapses.',
         },
-       
+        config: { variant: "normal" },
       },
 
       {
@@ -370,7 +474,7 @@ export const theories: LongFormType[] = [
         content: {
           text: 'This "theology of the break" suggests that beauty is no longer found in perfection, but in the specific way an object fails to meet expectation. When a $5,000 blazer is treated with the same disregard as a subway wall, the hierarchy of value collapses.',
         },
-       
+        config: { variant: "normal" },
       },
       {
         id: "b9",
@@ -378,7 +482,7 @@ export const theories: LongFormType[] = [
         content: {
           text: 'This "theology of the break" suggests that beauty is no longer found in perfection, but in the specific way an object fails to meet expectation. When a $5,000 blazer is treated with the same disregard as a subway wall, the hierarchy of value collapses.',
         },
-       
+        config: { variant: "normal" },
       },
       {
         id: "b2",
@@ -386,6 +490,7 @@ export const theories: LongFormType[] = [
         content: {
           text: "All systems tend toward disorder. This is not failure—it is structure unfolding over time.",
         },
+        config: { variant: "normal" },
       },
       {
         id: "b3",
@@ -424,6 +529,18 @@ export const theories: LongFormType[] = [
           },
           title: "FIG_A — Entropy",
           caption: "Ordered systems degrade into disorder.",
+        },
+      },
+      {
+        id: "b11",
+        type: "ref",
+        content: {
+          refs: [
+            'Deleuze, G. & Guattari, F. (1987). "A Thousand Plateaus." University of Minnesota Press.',
+            "Architecture of the Digital Abyss. Monograph Series 04.",
+            'Vandal, V. (2022). "Concrete Sanctuaries: The New Luxury." Void Journal.',
+            "Technical Monospace and Its Discontents. Typography Review, Autumn Edition.",
+          ],
         },
       },
     ],

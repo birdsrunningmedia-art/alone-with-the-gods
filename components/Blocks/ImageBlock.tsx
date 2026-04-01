@@ -12,21 +12,32 @@ export function ImageBlock({ content, config }: ImageBlockType) {
     );
   } else if (config?.variant === "cover") {
     return (
-      <Image
-        src={content.images[0].src}
-        alt={content.images[0].alt}
-        width={1000}
-        height={600}
-      />
+      <div className="relative w-full h-[512px] shadow-hard border-2 border-border">
+        <Image
+          src={content.images[0].src}
+          alt={content.images[0].alt}
+          fill
+          sizes="(max-width: 512px) 100vw, 512px"
+          className="object-cover"
+          loading="eager"
+        />
+      </div>
     );
   } else {
     return (
-      <Image
-        src={content.images[0].src}
-        alt={content.images[0].alt}
-        width={1000}
-        height={600}
-      />
+      <div>
+        {content.images.map((image, i) => (
+          <div className="relative w-full h-64" key={i}>
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width: 312px) 100vw, 256px"
+              className="object-cover"
+            />
+          </div>
+        ))}
+      </div>
     );
   }
 }

@@ -76,7 +76,7 @@ export type CardBlockType = {
       body: string;
     }[];
   };
-  config: CardBlockConfig;
+  config?: CardBlockConfig;
 };
 
 // Fig block here
@@ -97,7 +97,7 @@ export type FigBlockType = {
 
 export type QuoteBlockType = {
   id: string;
-  type: "quote" | 'quoteCard';
+  type: "quote" | "quoteCard";
   content: { quote: string; author?: string };
   config?: { variant?: "log" | "essay" | "theory" };
 };
@@ -129,7 +129,8 @@ export type BlockType =
   | FigBlockType // causality point for future conundrum
   | AuthorBlockType
   | TableBlockType
-  | RefBlockType;
+  | RefBlockType
+  | CardBlockType;
 
 export type TagType = "log" | "essay" | "theory";
 export type ThemeType = "primary" | "secondary" | "accent" | "muted";
